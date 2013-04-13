@@ -3,6 +3,7 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"> </link>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
   </head>
  <body>
@@ -14,27 +15,13 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="brand" href="#">Project name</a>
+         <a class="brand" href="index.htm">  <i class="icon-legal"></i>  Nail it</a>
          <div class="nav-collapse collapse">
            <ul class="nav">
              <li class="active"><a href="#">Home</a></li>
-             <li><a href="#about">About</a></li>
-             <li><a href="#contact">Contact</a></li>
-             <!--
-             <li class="dropdown">
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-             <ul class="dropdown-menu">
-               <li><a href="#">Action</a></li>
-               <li><a href="#">Another action</a></li>
-               <li><a href="#">Something else here</a></li>
-               <li class="divider"></li>
-               <li class="nav-header">Nav header</li>
-               <li><a href="#">Separated link</a></li>
-               <li><a href="#">One more separated link</a></li>
-             </ul>
-             </li>
-             -->
-
+             <li><a href="about.htm">About</a></li>
+             <li><a href="listView.htm">Browse Problems</a></li>
+             <li><a href="inputView.htm">Input Problem</a></li>
            </ul>
            <form class="navbar-form pull-right">
              <input class="span2" type="text" placeholder="Email">
@@ -44,41 +31,45 @@
          </div><!--/.nav-collapse -->
        </div>
      </div>
-   </div>
 
    <div class="container">
 
-     <!-- Main hero unit for a primary marketing message or call to action -->
      <div class="hero-unit">
-       <h1>Nail some excercises!</h1>
+       <h1>Nail some problems!</h1>
        <p> This page is all about practice: you can look for exercises someone else contributed, or ask the community for solution of your problem. If you feel
        you really need help, you can set a bounty - a small tip that will be given to the person who solves your exercise.</p>
-       <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
      </div>
 
      <!-- Example row of columns -->
      <div class="row">
        <div class="span4">
-         <h2>Browse all problems</h2>
-         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-         <p><a class="btn" href="#">View details &raquo;</a></p>
+         <h2>Browse problems</h2>
+         <p> Look through all the problems in community database. Find solutions to problems similiar to yours. Get your daily mathematical practice.  </p>
+         <form>
+              <input type="text" placeholder="search..">
+         </form>
+         <p><a href="listView.htm#browse-all" class="btn btn-primary btn-large">Search & Browse &raquo;</a></p>
        </div>
        <div class="span4">
          <h2>Solve problems</h2>
-         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-         <p><a class="btn" href="#">Sort by time to go&raquo;</a>  <a class="btn" href="#">Sort by bounty &raquo;</a>  </p>
+         <p> Look for problems to solve. Earn community karma and earn small tips, helping others to learn. Gain exp and become greatest mathematician around. </p>
+         <form>
+              <input type="text" placeholder="search..">
+         </form>
+         <p><a href="listView.htm#nailable-by-time" class="btn btn-primary">Sort by time to go &raquo;</a>
+         <a href="listView.htm#nailable-by-bounty" class="btn btn-primary"> Sort by bounty  &raquo;</a></p>
        </div>
        <div class="span4">
-         <h2>Upload your problem</h2>
-         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-         <p><a class="btn" href="#">View details &raquo;</a></p>
+         <h2>Upload problem</h2>
+         <p> Share an interesting exercise with you the community. Look for help with tough problems. Collaborate with others to become maths rock star. <br> <br> <br>  </p>
+         <p><a href="inputView.htm" class="btn btn-primary btn-large"> Upload a problem &raquo;</a></p>
        </div>
      </div>
 
      <hr>
 
      <footer>
-     <p>&copy; Company 2013</p>
+     <p>&copy; Million Integrals 2013</p>
      </footer>
 
    </div> <!-- /container -->
