@@ -5,6 +5,10 @@
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"> </link>
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
   </head>
  <body>
    <div class="navbar navbar-inverse navbar-fixed-top">
@@ -21,7 +25,7 @@
              <li><a href="index.htm">Home</a></li>
              <li><a href="about.htm">About</a></li>
              <li><a href="listView.htm">Browse Problems</a></li>
-             <li class="active"><a href="#">Input Problem</a></li>
+             <li><a href="inputView.htm">Input Problem</a></li>
            </ul>
            <form class="navbar-form pull-right">
              <input class="span2" type="text" placeholder="Email">
@@ -41,9 +45,18 @@
        <p>  
      
        I'd be happy if someone could justify the union bound step in this proof in a more precise manner.
-       At the top of page 5 in this article http://www.gatsby.ucl.ac.uk/~risi/courses/ML2/2008/VC.pdf, it is stated:
+       At the top of page 5 in this article <a> http://www.gatsby.ucl.ac.uk/~risi/courses/ML2/2008/VC.pdf, </a> it is stated:
 
-       The union bound is applied only on a finite set of hypotheses because two hypythesis h and h' only need to be counted as distinct if they differ on one of the samples in S or S'. But if S and S' change, so do the distinct hypothese that we bound on. The aforementioned h and h' may become or cease to be distinct. To conclude, the hypothese to apply the bound over, change with each sample.
+      \[\begin{aligned}
+      \dot{x} &amp; = \sigma(y-x) \\
+      \dot{y} &amp; = \rho x - y - xz \\
+      \dot{z} &amp; = -\beta z + xy
+      \end{aligned} \]
+
+
+      The union bound is applied only on a finite set of hypotheses because two hypythesis $h$ and $h'$ only need to be counted as distinct
+      if they differ on one of the samples in $S$ or $S'$. But if $S$ changes, so do the distinct hypothese that we bound on.
+      The aforementioned $h$ and $h'$ may become or cease to be distinct. To conclude, the hypothese to apply the bound over, change with each sample.
       How exactly can this step be justified? What are the events(subsets of the sample space) in the union bound? 
      
        </p>
@@ -51,9 +64,13 @@
 
      <div class="row">
        <div class="span6 offset1">
-         <h3> first comment</h3>
+         <h4> <font color="red"> MikeMG </font> wrote:   </h4>
          <p>
-         tiruriru
+         This is very easy, come on. Please note that:
+         \[\begin{equation}
+         32+2
+         \end{equation} \]
+         so taking derivative by e of  this small equation, we arive at the conclusian that you should go crazy.
          </p>
        </div>
      </div>
@@ -61,9 +78,17 @@
 
     <div class="row">
        <div class="span4 offset1">
-         <h3> second comment</h3>
+         <h4> <font color="red"> Your Mother </font> wrote:   </h4>
          <p>
-         tiruriru
+         Son you should better study law and not this crap. What is this, seriously. Look at this:
+
+
+         \[\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+         \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+         \frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+         \frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
+         \end{vmatrix}  \]
+
          </p>
        </div>
      </div>
@@ -71,38 +96,54 @@
 
      <div class="hero-unit">
        <p>  
-     
-       I'd be happy if someone could justify the union bound step in this proof in a more precise manner.
-       At the top of page 5 in this article http://www.gatsby.ucl.ac.uk/~risi/courses/ML2/2008/VC.pdf, it is stated:
-
-       The union bound is applied only on a finite set of hypotheses because two hypythesis h and h' only need to be counted as distinct if they differ on one of the samples in S or S'. But if S and S' change, so do the distinct hypothese that we bound on. The aforementioned h and h' may become or cease to be distinct. To conclude, the hypothese to apply the bound over, change with each sample.
-      How exactly can this step be justified? What are the events(subsets of the sample space) in the union bound? 
+       
+       As the name suggests, object-oriented programming is related to objects. So far, we have used objects as loose aggregations of
+       values, adding and altering their properties whenever we saw fit. In an object-oriented approach, objects are viewed as little
+       worlds of their own, and the outside world may touch them only through a limited and well-defined interface, a number of specific
+       methods and properties. The 'reached list' we used at the end of chapter 7 is an example of this: We used only three functions,
+       makeReachedList, storeReached, and findReached to interact with it. These three functions form an interface for such objects.
      
        </p>
      </div>
 
 
+     <div class="row">
+       <div class="span6 offset1">
+         <h4> <font color="red"> Samsung </font> wrote:   </h4>
+         <p>
+
+         HAI
+         CAN HAS STDIO?
+         PLZ OPEN FILE "LOLCATS.TXT"?
+         AWSUM THX
+         VISIBLE FILE
+         O NOES
+         INVISIBLE "ERROR!"
+         KTHXBYE
+
+         </p>
+       </div>
+       </div>
+ 
+
+
 
      <div class="row">
        <div class="span6 offset1">
-         <h3> first comment</h3>
+         <h4> <font color="red"> Kosman </font> wrote:   </h4>
          <p>
-         tiruriru
+         I talk crap because I eat shiet.
          </p>
        </div>
-     </div>
-
-
-    <div class="row">
-       <div class="span4 offset1">
-         <h3> second comment</h3>
-         <p>
-         tiruriru
-         </p>
        </div>
-     </div>
+ 
 
 
+
+
+
+
+    
      <div class="hero-unit">
          <h4> your comment or solution </h3>
        <div class="btn-toolbar">
@@ -119,12 +160,6 @@
        <p><a href="#" class="btn btn-primary">Submit</a>   <a href="#" class="btn btn-success">Discuss</a></p>
 
      </div>
-
-
-
-
-
-
 
      <hr>
      <footer>
